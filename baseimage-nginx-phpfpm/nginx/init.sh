@@ -1,6 +1,5 @@
 #!/bin/sh
 
-# Use the TZ environment variable, otherwise use UTC
 NGINX_DOCROOT="/app"
 if [ -n "${DOCROOT}" ]
 then

@@ -21,7 +21,6 @@ apt-get update && \
         php5-gd \
         php5-xdebug \
         php5-gd \
-        php5-mongo \
         php5-imap \
         php-pear \
         php-apc && \

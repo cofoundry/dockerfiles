@@ -1,5 +1,5 @@
 FROM phusion/baseimage:latest
-MAINTAINER Peter Olson <that0n3guy@users.noreply.github.com>
+MAINTAINER Mario Rogic <hello@mario.net.au>
 
 # Install base packages
 ENV DEBIAN_FRONTEND noninteractive
