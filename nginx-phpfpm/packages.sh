@@ -10,6 +10,7 @@ apt-get update && \
         curl \
         nginx \
         git \
+        mysql-client \
         php5-fpm \
         php5-mysql \
         php5-imagick \
