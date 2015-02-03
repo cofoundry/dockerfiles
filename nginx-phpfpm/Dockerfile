@@ -18,6 +18,9 @@ RUN /build/php-fpm/setup.sh
 COPY ./composer /build/composer
 RUN /build/composer/setup.sh
 
+# Fix perms for our volume mounts
+RUN usermod -u 1000 www-data
+
 EXPOSE 80
 WORKDIR /app
 CMD ["/sbin/my_init"]
