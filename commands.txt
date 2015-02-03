@@ -1,0 +1,6 @@
+
+# Run composer with mount
+docker run --privileged=true -v /Users/mario/dev/cofoundry-docker:/data/www:rw --rm cofoundry/composer
+
+# Build composer out of composer/ folder Dockerfile def
+docker build -t cofoundry/composer composer
