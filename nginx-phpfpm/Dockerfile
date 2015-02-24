@@ -1,9 +1,12 @@
 FROM phusion/baseimage:latest
 MAINTAINER Mario Rogic <hello@mario.net.au>
 
-# Install base packages
-ENV DEBIAN_FRONTEND noninteractive
+# Env vars
 ENV HOME /root
+ENV DEBIAN_FRONTEND noninteractive
+
+# Reset host keys
+RUN /etc/my_init.d/00_regen_ssh_host_keys.sh
 
 # Build packages first
 COPY ./packages.sh /build/packages.sh
