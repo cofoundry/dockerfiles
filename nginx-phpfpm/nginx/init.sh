@@ -1,11 +1,11 @@
 #!/bin/sh
 
-if [ -n "${NGINX_CONF}"]
+if [ -n "${NGINX_CONF}" ]
 then
     cp $NGINX_CONF /etc/nginx/nginx.conf
 fi
 
-if [ -n "${SITE_CONF}"]
+if [ -n "${SITE_CONF}" ]
 then
     cp $SITE_CONF /etc/nginx/sites-enabled/default
 fi
